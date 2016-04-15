@@ -4,7 +4,9 @@ execute pathogen#infect()
 
 " Set color scheme
 set background=dark
-colorscheme murphy
+if has("gui_running") " Doesn't seem to work right on the command line
+    colorscheme murphy
+endif
 
 " Enable current line highlighting
 set cul
@@ -45,5 +47,7 @@ set undolevels=1000
 autocmd BufWritePre * :%s/\s\+$//e
 
 " Start NERDTree and move cursor to the edit buffer
-autocmd VimEnter * NERDTree
-autocmd VimEnter * wincmd p
+if has("gui_running") " Doesn't seem to work right on the command line
+    autocmd VimEnter * NERDTree
+    autocmd VimEnter * wincmd p
+endif
