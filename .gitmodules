@@ -22,3 +22,6 @@
 [submodule "bundle/vim-youcompleteme"]
 	path = bundle/vim-youcompleteme
 	url = https://github.com/Valloric/YouCompleteMe.git
+[submodule "bundle/vim-unimpaired"]
+	path = bundle/vim-unimpaired
+	url = https://github.com/tpope/vim-unimpaired.git
