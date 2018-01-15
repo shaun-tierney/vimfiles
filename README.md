@@ -2,7 +2,7 @@
 
 This is the latest copy of my personal vim configuration.
 
-## Instalation instructions
+## Installation Instructions
 
 ### Mac/Linux
 
