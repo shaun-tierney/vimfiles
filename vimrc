@@ -46,8 +46,13 @@ set undolevels=1000
 " people.
 autocmd BufWritePre * :%s/\s\+$//e
 
-" Start NERDTree and move cursor to the edit buffer
+
 if has("gui_running") " Doesn't seem to work right on the command line
+    " Start NERDTree and move cursor to the edit buffer
     autocmd VimEnter * NERDTree
     autocmd VimEnter * wincmd p
+
+    " Open the Quick Fix window
+    copen 6
 endif
+
