@@ -56,3 +56,5 @@ if has("gui_running") " Doesn't seem to work right on the command line
     copen 6
 endif
 
+let g:ycm_server_python_interpreter = '/usr/bin/python'
+let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
