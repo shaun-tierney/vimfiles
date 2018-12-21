@@ -54,13 +54,17 @@ flags = [
 '/usr/include/c++/7',
 '-isystem',
 '/usr/lib/llvm-7/lib/clang/7.0.1/include',
+'-isystem',
+'/usr/lib/llvm-7/include/',
+'-isystem',
+'/usr/include',
 ]
 
 # Clang automatically sets the '-std=' flag to 'c++14' for MSVC 2015 or later,
 # which is required for compiling the standard library, and to 'c++11' for older
 # versions.
 if platform.system() != 'Windows':
-  flags.append( '-std=c++11' )
+  flags.append( '-std=c++14' )
 
 
 # Set this to the absolute path to the folder (NOT the file!) containing the
