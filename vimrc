@@ -56,5 +56,7 @@ if has("gui_running") " Doesn't seem to work right on the command line
     copen 6
 endif
 
+command KernelStyle set tabstop=8 softtabstop=8 shiftwidth=8 noexpandtab list
+
 let g:ycm_server_python_interpreter = '/usr/bin/python'
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
